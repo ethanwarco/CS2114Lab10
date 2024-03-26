@@ -322,4 +322,15 @@ public class DLListTest extends TestCase {
         assertEquals(0,list.size());
     }
 
+    public void testToString2() {
+        assertEquals("{}",
+                list.toString());
+        list.add("Z");
+        assertEquals("{Z}",
+                list.toString());
+        list.add("Y");
+        assertEquals("{Z, Y}",
+                list.toString());
+    }
+
 }
